@@ -17,8 +17,8 @@ Users should be able to:
 
 ## Links
 
-- [Solution]()
-- [Live]()
+- [Solution](https://github.com/MooseCowBear/frontend-mentor-notifications-page)
+- [Live](https://moosecowbear.github.io/frontend-mentor-notifications-page/)
 
 ## Built with
 
