@@ -115,17 +115,6 @@ section {
     justify-content: center;
 }
 
-#notifications-count {
-    color: var(--background);
-    font-size: 0.9em;
-}
-
-.notification {
-    display: flex;
-    gap: 1em;
-    font-size: 0.8em;
-}
-
 button {
     border: none;
     background-color: transparent;
@@ -135,6 +124,17 @@ button {
 
 button:hover, button:focus {
     cursor: pointer;
+}
+
+#notifications-count {
+    color: var(--background);
+    font-size: 0.9em;
+}
+
+.notification {
+    display: flex;
+    gap: 1em;
+    font-size: 0.8em;
 }
 
 main > div {
@@ -155,16 +155,26 @@ main > div > div {
 .user-name {
     color: var(--text-username);
     font-weight: 800;
+    text-decoration: none;
+}
+.user-name:hover, .user-name:focus {
+    color: var(--accent-one);
 }
 
 .post {
     font-weight: 800;
-    color: var(--text-post)
+    color: var(--text-post);
+    text-decoration: none;
+}
+
+.post:hover, .post:focus {
+    color: var(--accent-one);
 }
 
 .group {
     font-weight: 800;
     color: var(--accent-one);
+    text-decoration: none;
 }
 
 .dot {
@@ -187,6 +197,10 @@ img {
     margin: 0.6em 0 0 4em;
     font-size: 0.8em;
     padding: 1em;
+}
+.message:hover, .message:focus {
+    cursor: pointer;
+    background-color: var(--border);
 }
 
 .notification-wrapper {
