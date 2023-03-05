@@ -5,7 +5,7 @@
     --background: hsl(210, 60%, 98%);
     --background-two:  hsl(0, 0%, 100%);
     --background-three: hsl(211, 68%, 94%);
-    --background-four: hsl(205, 33%, 90%);
+    --background-four: hsl(205, 33%, 90%); /* might not be background */
     --text: hsl(219, 14%, 63%);
     --text-post:  hsl(219, 12%, 42%);
     --text-username: hsl(224, 21%, 14%);
@@ -71,4 +71,137 @@ a:not([class]) {
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-three);
+    padding: 3rem;
+    color: var(--text);
+    letter-spacing: 0.01em;
+}
+
+main {
+    background-color: var(--background-two);
+    padding: 1em 2em;
+    border-radius: 20px;
+    max-width: 38rem;
+}
+
+h1 {
+    color: var(--text-username);
+    font-size: 1.2em;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1em;
+}
+
+.heading-wrapper {
+    display: flex;
+    gap: 0.6em;
+    align-items: center;
+}
+
+.heading-wrapper > div {
+    background-color: var(--accent-one);
+    padding: 0 0.6em;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#notifications-count {
+    color: var(--background);
+    font-size: 0.9em;
+}
+
+.notification {
+    display: flex;
+    gap: 1em;
+    font-size: 0.8em;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    color: var(--text);
+    font-size: 0.8em;
+}
+
+button:hover, button:focus {
+    cursor: pointer;
+}
+
+main > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+main > div > div {
+    border-radius: 8px;
+    padding: 1em;
+}
+
+.unread {
+    background-color: var(--background);
+}
+
+.user-name {
+    color: var(--text-username);
+    font-weight: 800;
+}
+
+.post {
+    font-weight: 800;
+    color: var(--text-post)
+}
+
+.group {
+    font-weight: 800;
+    color: var(--accent-one);
+}
+
+.dot {
+    height: 0.5em;
+    width: 0.5em;
+    border-radius: 50%;
+    background-color: var(--accent-two);
+    display: inline-block;
+    margin: 0 0.3em;
+}
+
+img {
+    width: 40px;
+    height: 40px;
+}
+
+.message {
+    border: 1px solid var(--text);
+    border-radius: 5px;
+    margin: 0.6em 0 0 4em;
+    font-size: 0.8em;
+    padding: 1em;
+}
+
+.notification-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 450px) {
+    body {
+        padding: 0;
+        background-color: var(--background-two);
+    }
+    main {
+        border-radius: 0;
+        padding: 1em;
+    }
 }
