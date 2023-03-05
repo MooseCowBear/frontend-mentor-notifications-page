@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./styles.css">
   <title>Frontend Mentor | Notifications page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -17,21 +17,25 @@
   </style>
 </head>
 <body>
-    <header>
-      <h1> Notifications</h1><div><span id="notifications-count">3</span></div>
+  <main>
+    <section>
+      <div class="heading-wrapper">
+        <h1> Notifications</h1>
+        <div>
+          <span id="notifications-count">3</span>
+        </div>
+      </div>
       <button>Mark all as read</button>
-    </header>
-    <main>
+    </section>
+    <div>
       <div class="notification unread">
         <img src="./assets/images/avatar-mark-webber.webp" alt="mark webber avatar">
         <div class="notification-summary">
-          <p>
-            <span class="user-name">Mark Webber</span> reacted to your recent post <span class="post">My first tournament today!</span>
-            <span class="dot"></span> <!-- is this what i want? -->
-          </p>
+          <p><span class="user-name">Mark Webber</span> reacted to your recent post <span class="post">My first tournament today!</span><span class="dot"></span></p>
           <p class="timestamp">1m ago</p>
         </div>
       </div>
+      
       <div class="notification unread">
         <img src="./assets/images/avatar-angela-gray.webp" alt="angela gray avatar">
         <div class="notification-summary">
@@ -42,21 +46,25 @@
       <div class="notification unread">
         <img src="./assets/images/avatar-jacob-thompson.webp" alt="jacos thompson avatar">
         <div class="notification-summary">
-          <p><span class="user-name">Jacob Thompson</span> has joined your group <span class="group">Chess Club</span><span class="dot"></span></p>
+            <p><span class="user-name">Jacob Thompson</span> has joined your group <span class="group">Chess Club</span><span class="dot"></span></p>
           <p class="timestamp">1 day ago</p>
         </div>
       </div>
-      <div class="notification read">
-        <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="rizky hasanuddin avatar">
-        <div class="notification-summary">
-          <p><span class="user-name">Rizky Hasanuddin</span> sent you a private message</p>
-          <p class="timestamp">5 days ago</p>
+
+      <div class="with-message">
+        <div class="notification read">
+          <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="rizky hasanuddin avatar">
+          <div class="notification-summary">
+            <p><span class="user-name">Rizky Hasanuddin</span> sent you a private message</p>
+            <p class="timestamp">5 days ago</p>
+          </div>
         </div>
         <p class="message">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
         I'm already having lots of fun and improving my game.</p>
       </div>
-      <div class="notification read">
-        <div class="notification-wrapper"> <!-- don't love having to do this for a single element-->
+
+      <div class="notification-wrapper"> <!-- don't love having to do this for a single element-->
+        <div class="notification read">
           <img src="./assets/images/avatar-kimberly-smith.webp" alt="kimberly smith avatar">
           <div class="notification-summary">
             <p><span class="user-name">Kimberly Smith</span> on your picture</p>
@@ -65,6 +73,7 @@
         </div>
         <img src="./assets/images/image-chess.webp" alt="woman playing chess"> 
       </div>
+
       <div class="notification read">
         <img src="./assets/images/avatar-nathan-peterson.webp" alt="nathan peterson avatar">
         <div class="notification-summary">
@@ -73,16 +82,17 @@
         </div>
       </div>
       <div class="notification read">
-        <div class="notification-summary">
         <img src="./assets/images/avatar-anna-kim.webp" alt="anna kim avatar">
+        <div class="notification-summary">
           <p><span class="user-name">Anna Kim</span> left the group <span class="group">Chess Club</span></p>
           <p class="timestamp">2 weeks ago</p>
         </div>
       </div>
+    </div>
   </main>
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">MooseCowBear</a>.
   </footer>
 </body>
 </html>
