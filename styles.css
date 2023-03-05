@@ -124,6 +124,7 @@ button {
 
 button:hover, button:focus {
     cursor: pointer;
+    color: var(--accent-one);
 }
 
 #notifications-count {
@@ -189,6 +190,10 @@ main > div > div {
 img {
     width: 40px;
     height: 40px;
+}
+
+img.commented:hover, img.commented:focus {
+    cursor: pointer;
 }
 
 .message {
