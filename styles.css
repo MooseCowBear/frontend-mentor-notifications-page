@@ -209,7 +209,7 @@ img.commented:hover, img.commented:focus {
     background-color: var(--border);
 }
 
-.notification-wrapper {
+.with-image {
     display: flex;
     justify-content: space-between;
     align-items: center;
