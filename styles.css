@@ -1,0 +1,74 @@
+:root {
+    --accent-one: hsl(219, 85%, 26%);
+    --accent-two: hsl(1, 90%, 64%); 
+
+    --background: hsl(210, 60%, 98%);
+    --background-two:  hsl(0, 0%, 100%);
+    --background-three: hsl(211, 68%, 94%);
+    --background-four: hsl(205, 33%, 90%);
+    --text: hsl(219, 14%, 63%);
+    --text-post:  hsl(219, 12%, 42%);
+    --text-username: hsl(224, 21%, 14%);
+}
+
+/* reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p, 
+section,
+article {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* end reset */
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+}
